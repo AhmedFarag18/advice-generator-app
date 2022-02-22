@@ -1,0 +1,117 @@
+:root {
+    --light: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --light-blue: hsl(218, 20%, 28%);
+    --dark-blue: hsl(217, 19%, 24%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    background: var(--dark-blue);
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.main {
+    width: 520px;
+    padding: 30px 30px 80px 30px;
+    background: var(--light-blue);
+    color: var(--light);
+    box-shadow: 0 11px 10px 5px #00000021;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.random {
+    color: var(--neon-green);
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.advice {
+    font-weight: 600;
+    font-size: 28px;
+    margin: 20px 0 30px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--neon-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    bottom: -30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 25px 0px var(--neon-green);
+}
+
+.pattern {
+    width: 100%;
+}
+
+@media(max-width:667px) {
+    .main {
+        width: 100%;
+    }
+}
+
+@media(max-width:375px) {
+    .main {
+        width: 100%;
+    }
+    .advice {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .main {
+        padding: 30px 40px 90px 40px;
+    }
+}
+
+@media(max-width:300px) {
+    .main {
+        width: 100%;
+    }
+    .advice {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .main {
+        padding: 30px 20px 90px 20px;
+    }
+}
