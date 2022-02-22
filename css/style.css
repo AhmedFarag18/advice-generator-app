@@ -47,18 +47,16 @@ body {
 
 .random {
     color: var(--neon-green);
-    font-weight: 300;
+    font-weight: 500;
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 4px;
-    font-family: 'Manrope', sans-serif;
 }
 
 .advice {
     font-weight: 600;
     font-size: 28px;
     margin: 10px 0 30px;
-    font-family: 'Manrope', sans-serif;
 }
 
 .btn {
@@ -91,27 +89,18 @@ body {
 }
 
 @media(max-width:375px) {
-    .main {
-        width: 100%;
-    }
+
     .advice {
         font-size: 20px;
         margin: 10px 0;
     }
     .main {
-        padding: 30px 40px 90px 40px;
+        padding: 30px 40px 70px 40px;
     }
 }
 
 @media(max-width:300px) {
     .main {
-        width: 100%;
-    }
-    .advice {
-        font-size: 20px;
-        margin: 10px 0;
-    }
-    .main {
-        padding: 30px 20px 90px 20px;
+        padding: 30px 20px 70px 20px;
     }
 }
