@@ -23,7 +23,7 @@ Your users should be able to:
 
 
 ## Language Used
-### HTML, CSS and JavaScript API
+### HTML, CSS JavaScript and API
 
 ### Fonts Used
 
